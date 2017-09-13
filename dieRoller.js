@@ -14,7 +14,7 @@ function roll(dieInput) {
     optionArray = optionList.match(/[a-z]\d+/g);
   }
   
-  for(var i = 0; i < numberOfDirToRoll; i++) {
+  for(var i = 0; i < numberOfDieToRoll; i++) {
     rawRollResults.push(Math.ceil(Math.random() * dieSize));
   }
   
