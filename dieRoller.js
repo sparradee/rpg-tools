@@ -38,7 +38,7 @@ function roll(dieInput) {
       }
       if(optionType === 'r') { // reroll rolls less than or equal to optionValue
         countedRollResults.forEach(function(die, index) {
-          if(dir <= optionValue) {
+          if(die <= optionValue) {
             var newRoll = roll('1d' + dieSize + 'r' + optionValue);
             countedRollResults[index] = newRoll;
           }
